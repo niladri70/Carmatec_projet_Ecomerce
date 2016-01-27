@@ -1,0 +1,79 @@
+<div class="header-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="user-menu">
+                        <ul>
+                            <% if user_signed_in? %>
+                                <li>
+                                <%= link_to "My Account",users_show_path %>
+                                </li>
+                                <li class="hello_ajax_partial">
+                                    <%=render 'layouts/wish'%>
+                                </li>
+                                <li>
+                                    <%= link_to('Order', orders_path)  %>  
+                                </li>
+                                <li>
+                                    <%if current_user.role_id ==1%>
+                                        <%=link_to 'Dashboard',admin_dashboard_index_path%>
+                                    <%end%>
+                                </li>
+                                <li>
+                                <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>   
+                                </li>
+                                  
+                            <% else %>
+                                <li>
+                                  <%= link_to('Login', new_user_session_path)  %>
+                                </li>
+                            <% end %>
+                        </ul>
+                    </div>
+                </div>
+                    
+                <div class="col-md-4">
+                    <div class="header-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="dropdown dropdown-small">
+                                <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" ><span class="key">currency :</span><span class="value">USD </span><b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">USD</a></li>
+                                       
+                                    </ul>
+                            </li>
+                            <li class="dropdown dropdown-small">
+                                <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle"><span class="key">language :</span><span class="value">English </span><b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">English</a></li>
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>  
+<div class="site-branding-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="logo">
+                    <h1><a href="<%shops_index_path%>">e<span>Electronics</span></a></h1>
+                </div>
+            </div>
+                <% if current_user.present? %>             
+                <%if Role.find(current_user.role_id).name == "USER"%>  
+                    <div class="col-sm-6">
+                        <div class="shopping-item check_ajax_partial">
+                            <%=render 'layouts/dynamic_cart'%>
+                        </div>
+                    </div>
+                <%end%>
+                <%end%>
+        </div>
+    </div>
+</div> <!-- End site branding area -->
+
+        

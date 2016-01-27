@@ -1,0 +1,33 @@
+ <div class="mainmenu-area">
+    <div class="container">
+        <div class="row">
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+
+               <li><%= link_to 'Home', shops_index_path%></li>
+                    <li><%= link_to 'Products', product_shops_path%></li>
+                     <% if user_signed_in? %>
+                    <li><%= link_to 'Cart', cart_shops_path%></li>
+                    <%end%>
+                    <li><%=link_to 'Category',  categories_path %></li>
+                    
+                        </ul>
+            </div>  
+        </div>
+    </div>
+</div>
+ <h1>Your order is:</h1>
+ <center>
+	<b>
+
+	Order id: <%= @current_order.id%><br><br>
+	<%@products.each do |a| %>
+	Product Name : <%= a.name%><br><br>
+	Product Image :<br> <%=image_tag(a.avatar_file_name, size:"300")%><br><br>
+	<%end%>
+    Total Price: <%=Address.where(:user_id => current_user.id).last.total_price %>
+	
+	</b><br><br>
+<b>Your order will be delivered within 10 days</b><br>
+</center>
+<%= link_to 'All Orders',orders_path%>

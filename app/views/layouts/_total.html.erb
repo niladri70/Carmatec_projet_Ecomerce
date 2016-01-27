@@ -1,0 +1,4 @@
+<% if current_user.try(:carts).present? %>
+	<%=  current_user.try(:carts).pluck(:product_id).map{|u| Product.find(u).price}.sum %>
+<% else %> 0
+<% end %>

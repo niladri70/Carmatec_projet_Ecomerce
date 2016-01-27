@@ -1,0 +1,1364 @@
+# Logfile created on 2016-01-11 14:03:19 +0530 by logger.rb/31641
+D, [2016-01-11T14:03:28.765709 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:28.765946 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:28.766222 #9529]  INFO -- : Started GET "/shops/product" for 127.0.0.1 at 2016-01-11 14:03:28 +0530
+D, [2016-01-11T14:03:28.861580 #9529] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (2.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+I, [2016-01-11T14:03:28.937812 #9529]  INFO -- : Processing by ShopsController#product as HTML
+D, [2016-01-11T14:03:29.137322 #9529] DEBUG -- :   [1m[35mUser Load (2.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+D, [2016-01-11T14:03:29.161011 #9529] DEBUG -- :   [1m[36mProduct Load (2.3ms)[0m  [1mSELECT  `products`.* FROM `products` LIMIT 8 OFFSET 0[0m
+D, [2016-01-11T14:03:29.218494 #9529] DEBUG -- :   [1m[35m (2.7ms)[0m  SELECT COUNT(*) FROM `products`
+I, [2016-01-11T14:03:29.444450 #9529]  INFO -- :   Rendered shops/product.html.erb within layouts/application (406.2ms)
+D, [2016-01-11T14:03:29.977306 #9529] DEBUG -- :   [1m[36mWishlist Load (2.4ms)[0m  [1mSELECT `wishlists`.* FROM `wishlists` WHERE `wishlists`.`user_id` = 2[0m
+I, [2016-01-11T14:03:29.977759 #9529]  INFO -- :   Rendered layouts/_wish.html.erb (163.4ms)
+D, [2016-01-11T14:03:30.019867 #9529] DEBUG -- :   [1m[35mRole Load (2.0ms)[0m  SELECT  `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1
+D, [2016-01-11T14:03:30.075121 #9529] DEBUG -- :   [1m[36mCart Load (2.6ms)[0m  [1mSELECT `carts`.* FROM `carts` WHERE `carts`.`user_id` = 2[0m
+D, [2016-01-11T14:03:30.097425 #9529] DEBUG -- :   [1m[35m (2.3ms)[0m  SELECT `carts`.`product_id` FROM `carts` WHERE `carts`.`user_id` = 2
+D, [2016-01-11T14:03:30.100806 #9529] DEBUG -- :   [1m[36mProduct Load (2.7ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1[0m
+D, [2016-01-11T14:03:30.101218 #9529] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1  [["id", 5]]
+D, [2016-01-11T14:03:30.104305 #9529] DEBUG -- :   [1m[36mProduct Load (2.9ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1[0m
+D, [2016-01-11T14:03:30.104619 #9529] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1  [["id", 5]]
+D, [2016-01-11T14:03:30.107240 #9529] DEBUG -- :   [1m[36mProduct Load (2.4ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+D, [2016-01-11T14:03:30.110190 #9529] DEBUG -- :   [1m[35mProduct Load (2.7ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 13 LIMIT 1
+D, [2016-01-11T14:03:30.113113 #9529] DEBUG -- :   [1m[36mProduct Load (2.6ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+D, [2016-01-11T14:03:30.113485 #9529] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1  [["id", 8]]
+D, [2016-01-11T14:03:30.116040 #9529] DEBUG -- :   [1m[36mProduct Load (2.3ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+D, [2016-01-11T14:03:30.116418 #9529] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1  [["id", 10]]
+D, [2016-01-11T14:03:30.116715 #9529] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m  [["id", 10]]
+D, [2016-01-11T14:03:30.119090 #9529] DEBUG -- :   [1m[35mProduct Load (2.1ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+D, [2016-01-11T14:03:30.119488 #9529] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+D, [2016-01-11T14:03:30.119724 #9529] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1  [["id", 1]]
+D, [2016-01-11T14:03:30.119970 #9529] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+D, [2016-01-11T14:03:30.120293 #9529] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1  [["id", 1]]
+D, [2016-01-11T14:03:30.120520 #9529] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+D, [2016-01-11T14:03:30.120741 #9529] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1  [["id", 2]]
+D, [2016-01-11T14:03:30.120961 #9529] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1[0m  [["id", 4]]
+D, [2016-01-11T14:03:30.121273 #9529] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1  [["id", 4]]
+D, [2016-01-11T14:03:30.121608 #9529] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1[0m  [["id", 4]]
+D, [2016-01-11T14:03:30.121838 #9529] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1  [["id", 4]]
+D, [2016-01-11T14:03:30.126183 #9529] DEBUG -- :   [1m[36m (3.4ms)[0m  [1mSELECT COUNT(*) FROM `carts` WHERE `carts`.`user_id` = 2[0m
+I, [2016-01-11T14:03:30.126498 #9529]  INFO -- :   Rendered layouts/_dynamic_cart.html.erb (98.9ms)
+I, [2016-01-11T14:03:30.126688 #9529]  INFO -- :   Rendered layouts/_header.html.erb (314.0ms)
+D, [2016-01-11T14:03:30.133864 #9529] DEBUG -- :   [1m[35mCategory Load (2.0ms)[0m  SELECT `categories`.* FROM `categories`
+I, [2016-01-11T14:03:30.175521 #9529]  INFO -- :   Rendered layouts/_footer.html.erb (48.0ms)
+I, [2016-01-11T14:03:30.176132 #9529]  INFO -- : Completed 200 OK in 1238ms (Views: 897.6ms | ActiveRecord: 281.2ms)
+D, [2016-01-11T14:03:30.195524 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:30.195595 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:30.195787 #9529]  INFO -- : Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-11 14:03:30 +0530
+D, [2016-01-11T14:03:30.203482 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:30.203544 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:30.203673 #9529]  INFO -- : Started GET "/assets/admin/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-11 14:03:30 +0530
+D, [2016-01-11T14:03:30.209935 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:30.209991 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:30.210118 #9529]  INFO -- : Started GET "/assets/admin/dashboard.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-11 14:03:30 +0530
+D, [2016-01-11T14:03:30.216321 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:30.216378 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:30.216505 #9529]  INFO -- : Started GET "/assets/admin/gallery.self-5611eb4a5c40418498199454c4083204e06be0e2f9ca07cf7bdbfebad8f2f0fc.css?body=1" for 127.0.0.1 at 2016-01-11 14:03:30 +0530
+D, [2016-01-11T14:03:30.224563 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:30.224620 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:30.224744 #9529]  INFO -- : Started GET "/assets/admin/layout.self-1d8ab45fbe4de6c5bdbdb57e331ceb68bbb0f65418a9dcbcfc246290dd4bf775.css?body=1" for 127.0.0.1 at 2016-01-11 14:03:30 +0530
+D, [2016-01-11T14:03:30.232679 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:30.232736 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:30.232860 #9529]  INFO -- : Started GET "/assets/admin/orders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-11 14:03:30 +0530
+D, [2016-01-11T14:03:30.256222 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:30.256298 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:30.256446 #9529]  INFO -- : Started GET "/assets/admin/products.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-11 14:03:30 +0530
+D, [2016-01-11T14:03:30.264771 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:30.264829 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:30.264953 #9529]  INFO -- : Started GET "/assets/admin/roles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-11 14:03:30 +0530
+D, [2016-01-11T14:03:30.276702 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:30.276779 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:30.276923 #9529]  INFO -- : Started GET "/assets/admin/text.self-114472b2f863f0d91d05156551ff9657d47dfb4496dc6c26aaf56e3da76a0497.css?body=1" for 127.0.0.1 at 2016-01-11 14:03:30 +0530
+D, [2016-01-11T14:03:30.289210 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:30.289325 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:30.289499 #9529]  INFO -- : Started GET "/assets/admin/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-11 14:03:30 +0530
+D, [2016-01-11T14:03:30.300120 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:30.300229 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:30.300353 #9529]  INFO -- : Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-01-11 14:03:30 +0530
+D, [2016-01-11T14:03:30.309204 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:30.309265 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:30.309391 #9529]  INFO -- : Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 127.0.0.1 at 2016-01-11 14:03:30 +0530
+D, [2016-01-11T14:03:30.318203 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:30.318266 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:30.318394 #9529]  INFO -- : Started GET "/assets/cart.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-11 14:03:30 +0530
+D, [2016-01-11T14:03:30.327350 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:30.327414 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:30.327546 #9529]  INFO -- : Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-11 14:03:30 +0530
+D, [2016-01-11T14:03:30.336450 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:30.336513 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:30.336644 #9529]  INFO -- : Started GET "/assets/checkout.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-11 14:03:30 +0530
+D, [2016-01-11T14:03:30.345180 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:30.345242 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:30.345366 #9529]  INFO -- : Started GET "/assets/orders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-11 14:03:30 +0530
+D, [2016-01-11T14:03:30.354267 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:30.354334 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:30.354466 #9529]  INFO -- : Started GET "/assets/owl.carousel.self-ad1798474744695e81071dda3d906ddadd86486a0677de386d35880426c72774.css?body=1" for 127.0.0.1 at 2016-01-11 14:03:30 +0530
+D, [2016-01-11T14:03:30.364003 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:30.364066 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:30.364190 #9529]  INFO -- : Started GET "/assets/products.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-11 14:03:30 +0530
+D, [2016-01-11T14:03:30.374358 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:30.374424 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:30.374553 #9529]  INFO -- : Started GET "/assets/responsive.self-234fcf9ff2b77f4b9250f1d7b25e3c6dbdf54455446e47d9e2f6e8565d0f37a0.css?body=1" for 127.0.0.1 at 2016-01-11 14:03:30 +0530
+D, [2016-01-11T14:03:30.383788 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:30.383860 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:30.383991 #9529]  INFO -- : Started GET "/assets/shop-homepage.self-3c9ee1ea8087e0f9031516c0862f06fba120e6795c05f32544c6cb72b8d4d249.css?body=1" for 127.0.0.1 at 2016-01-11 14:03:30 +0530
+D, [2016-01-11T14:03:30.391989 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:30.392064 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:30.392203 #9529]  INFO -- : Started GET "/assets/shops.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-11 14:03:30 +0530
+D, [2016-01-11T14:03:30.403258 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:30.403320 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:30.403444 #9529]  INFO -- : Started GET "/assets/style.self-bc84e0f07e5980b1c7571a2aaf5d364908658b442ca1f41b64dc1d27c9e49123.css?body=1" for 127.0.0.1 at 2016-01-11 14:03:30 +0530
+D, [2016-01-11T14:03:30.411897 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:30.411967 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:30.412098 #9529]  INFO -- : Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-11 14:03:30 +0530
+D, [2016-01-11T14:03:30.477040 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:30.477119 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:30.477268 #9529]  INFO -- : Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-01-11 14:03:30 +0530
+D, [2016-01-11T14:03:30.488496 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:30.488561 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:30.488639 #9529]  INFO -- : Started GET "/shops/css/owl.carousel.css" for 127.0.0.1 at 2016-01-11 14:03:30 +0530
+F, [2016-01-11T14:03:30.496397 #9529] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/shops/css/owl.carousel.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  thin (1.6.4) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.4) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.4) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.4) lib/thin/connection.rb:53:in `process'
+  thin (1.6.4) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.8) lib/eventmachine.rb:193:in `run_machine'
+  eventmachine (1.0.8) lib/eventmachine.rb:193:in `run'
+  thin (1.6.4) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.4) lib/thin/server.rb:162:in `start'
+  rack (1.6.4) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.4) lib/rack/server.rb:286:in `start'
+  railties (4.2.4) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:75:in `tap'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.4) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:9:in `require'
+  bin/rails:9:in `<top (required)>'
+  spring (1.6.0) lib/spring/client/rails.rb:28:in `load'
+  spring (1.6.0) lib/spring/client/rails.rb:28:in `call'
+  spring (1.6.0) lib/spring/client/command.rb:7:in `call'
+  spring (1.6.0) lib/spring/client.rb:28:in `run'
+  spring (1.6.0) bin/spring:51:in `<top (required)>'
+  spring (1.6.0) lib/spring/binstub.rb:11:in `load'
+  spring (1.6.0) lib/spring/binstub.rb:11:in `<top (required)>'
+  /usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+  /usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+  bin/spring:13:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2016-01-11T14:03:30.540291 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+I, [2016-01-11T14:03:30.638112 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.5ms)
+I, [2016-01-11T14:03:30.703497 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (61.8ms)
+I, [2016-01-11T14:03:30.709145 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+I, [2016-01-11T14:03:30.709266 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (175.3ms)
+I, [2016-01-11T14:03:30.768508 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+I, [2016-01-11T14:03:30.778798 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+I, [2016-01-11T14:03:30.783671 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+I, [2016-01-11T14:03:30.787842 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+I, [2016-01-11T14:03:30.788347 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (16.2ms)
+I, [2016-01-11T14:03:30.792432 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+I, [2016-01-11T14:03:30.796555 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+I, [2016-01-11T14:03:30.796695 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (32.1ms)
+D, [2016-01-11T14:03:30.797697 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:30.797751 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:30.797841 #9529]  INFO -- : Started GET "/shops/style.css" for 127.0.0.1 at 2016-01-11 14:03:30 +0530
+I, [2016-01-11T14:03:30.804830 #9529]  INFO -- : Processing by ShopsController#show as CSS
+I, [2016-01-11T14:03:30.804924 #9529]  INFO -- :   Parameters: {"id"=>"style"}
+D, [2016-01-11T14:03:30.811188 #9529] DEBUG -- :   [1m[36mCategory Load (4.9ms)[0m  [1mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 0 LIMIT 1[0m
+I, [2016-01-11T14:03:30.812030 #9529]  INFO -- : Completed 404 Not Found in 7ms (ActiveRecord: 4.9ms)
+F, [2016-01-11T14:03:30.813784 #9529] FATAL -- : 
+ActiveRecord::RecordNotFound (Couldn't find Category with 'id'=style):
+  app/controllers/shops_controller.rb:46:in `show'
+
+
+I, [2016-01-11T14:03:31.045057 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.1ms)
+I, [2016-01-11T14:03:31.052178 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+I, [2016-01-11T14:03:31.057756 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+I, [2016-01-11T14:03:31.057911 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.3ms)
+I, [2016-01-11T14:03:31.066777 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+I, [2016-01-11T14:03:31.075864 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+I, [2016-01-11T14:03:31.080586 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+I, [2016-01-11T14:03:31.085877 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+I, [2016-01-11T14:03:31.086426 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (16.0ms)
+I, [2016-01-11T14:03:31.090689 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+I, [2016-01-11T14:03:31.094738 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+I, [2016-01-11T14:03:31.094866 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (32.1ms)
+D, [2016-01-11T14:03:31.095690 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.095748 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.095861 #9529]  INFO -- : Started GET "/shops/css/responsive.css" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+F, [2016-01-11T14:03:31.102389 #9529] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/shops/css/responsive.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  thin (1.6.4) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.4) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.4) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.4) lib/thin/connection.rb:53:in `process'
+  thin (1.6.4) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.8) lib/eventmachine.rb:193:in `run_machine'
+  eventmachine (1.0.8) lib/eventmachine.rb:193:in `run'
+  thin (1.6.4) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.4) lib/thin/server.rb:162:in `start'
+  rack (1.6.4) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.4) lib/rack/server.rb:286:in `start'
+  railties (4.2.4) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:75:in `tap'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.4) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:9:in `require'
+  bin/rails:9:in `<top (required)>'
+  spring (1.6.0) lib/spring/client/rails.rb:28:in `load'
+  spring (1.6.0) lib/spring/client/rails.rb:28:in `call'
+  spring (1.6.0) lib/spring/client/command.rb:7:in `call'
+  spring (1.6.0) lib/spring/client.rb:28:in `run'
+  spring (1.6.0) bin/spring:51:in `<top (required)>'
+  spring (1.6.0) lib/spring/binstub.rb:11:in `load'
+  spring (1.6.0) lib/spring/binstub.rb:11:in `<top (required)>'
+  /usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+  /usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+  bin/spring:13:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2016-01-11T14:03:31.144291 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+I, [2016-01-11T14:03:31.237367 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.3ms)
+I, [2016-01-11T14:03:31.242816 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+I, [2016-01-11T14:03:31.248462 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+I, [2016-01-11T14:03:31.248582 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (110.4ms)
+I, [2016-01-11T14:03:31.256041 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+I, [2016-01-11T14:03:31.264868 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+I, [2016-01-11T14:03:31.270417 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+I, [2016-01-11T14:03:31.274449 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+I, [2016-01-11T14:03:31.274906 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (15.3ms)
+I, [2016-01-11T14:03:31.278834 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+I, [2016-01-11T14:03:31.336430 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+I, [2016-01-11T14:03:31.336598 #9529]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (84.3ms)
+D, [2016-01-11T14:03:31.337228 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.337269 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.337415 #9529]  INFO -- : Started GET "/assets/jquery.self-aedf0b4f9535e7b1d01d6a9ad81e6ecdb5b9a82acf17f3798645b7dbca2d86a1.js?body=1" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:03:31.344956 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.345018 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.345146 #9529]  INFO -- : Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:03:31.352440 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.352512 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.352680 #9529]  INFO -- : Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:03:31.368208 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.368290 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.368443 #9529]  INFO -- : Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:03:31.377619 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.377689 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.377832 #9529]  INFO -- : Started GET "/assets/admin/Gruntfile.self-a25be840678cc8602a8d0ab95a89b49a5c9fecb1340f45b943244d576fec7595.js?body=1" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:03:31.386335 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.386403 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.386539 #9529]  INFO -- : Started GET "/assets/admin/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:03:31.395206 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.395376 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.395840 #9529]  INFO -- : Started GET "/assets/admin/bootstrap.min.self-acc6a813b6dc0a695296b4fec3ca7fbc48269ab0b6345aa4c4acb64b80267dad.js?body=1" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:03:31.405279 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.405341 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.405465 #9529]  INFO -- : Started GET "/assets/admin/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:03:31.411380 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.411436 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.411553 #9529]  INFO -- : Started GET "/assets/admin/dashboard.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:03:31.417706 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.417768 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.417900 #9529]  INFO -- : Started GET "/assets/admin/dashboard2.self-8b12cb30cc989bdcf5f00642868aa0610801de89379331195ef2cf8237af01bf.js?body=1" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:03:31.428363 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.428426 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.428565 #9529]  INFO -- : Started GET "/assets/admin/npm.self-f66d504f2cd5bddaaade9c854b02828e5e46d225517ab9feebe1af2615566b1e.js?body=1" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:03:31.436002 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.436066 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.436202 #9529]  INFO -- : Started GET "/assets/admin/orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:03:31.442283 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.442345 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.442470 #9529]  INFO -- : Started GET "/assets/admin/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:03:31.450908 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.450977 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.451106 #9529]  INFO -- : Started GET "/assets/admin/roles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:03:31.459359 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.459418 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.459540 #9529]  INFO -- : Started GET "/assets/admin/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:03:31.465541 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.465602 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.465725 #9529]  INFO -- : Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:03:31.474527 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.474587 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.474717 #9529]  INFO -- : Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:03:31.484547 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.484681 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.484875 #9529]  INFO -- : Started GET "/assets/cart.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:03:31.493712 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.493856 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.494040 #9529]  INFO -- : Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:03:31.502877 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.503014 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.503199 #9529]  INFO -- : Started GET "/assets/checkout.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:03:31.510777 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.510845 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.510976 #9529]  INFO -- : Started GET "/assets/jquery.easing.1.3.min.self-ec8061d243f5b6fdde58173def6b03815ae7ad274c1399d4b9df5a2172be9952.js?body=1" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:03:31.518978 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.519040 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.519172 #9529]  INFO -- : Started GET "/assets/jquery.sticky.self-e2625c28848cbca930c42cf94c85201372302f87978932e468d75466addc23e6.js?body=1" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:03:31.528601 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.528659 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.528788 #9529]  INFO -- : Started GET "/assets/main.self-7fff7727ef731424eca26fe72e01d9275a876cc242befbf8a3a26ee1dd3b871d.js?body=1" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:03:31.543214 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.543376 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.543599 #9529]  INFO -- : Started GET "/assets/orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:03:31.553768 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.553937 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.554121 #9529]  INFO -- : Started GET "/assets/owl.carousel.min.self-3c9f9dac2a281d1090601a8896fe59fb9df20f261295bbe087f2a0f56ef7e8d9.js?body=1" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:03:31.565359 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.565419 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.565542 #9529]  INFO -- : Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:03:31.571861 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.571988 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.572172 #9529]  INFO -- : Started GET "/assets/shops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:03:31.580171 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.580233 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.580365 #9529]  INFO -- : Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:03:31.588403 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.588460 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.588589 #9529]  INFO -- : Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:03:31.599158 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.599222 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.599302 #9529]  INFO -- : Started GET "/assets/mob_2-c3939c789069127710d72c4ac6024961c2fd04514a5f9ccec50ef5c48d8b596d.jpg" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:03:31.607886 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.607955 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.608032 #9529]  INFO -- : Started GET "/assets/tv_1-bba7142e3b208c1e7d78cea185e24a4ee3066675c62ab099168d15d26c7311f2.jpg" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:03:31.617187 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.617252 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.617325 #9529]  INFO -- : Started GET "/assets/lap_1-0fa4e6da18ef5500329ed7862f547b6d2458e2eb6011f9b08dc11ed0508812a0.jpg" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:03:31.625393 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.625458 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.625531 #9529]  INFO -- : Started GET "/assets/mob_3-2f9df5c4c47690bdfe1bd305b622963c2d6afd96293b6f1ae3d5fc17feb7c150.jpg" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:03:31.633773 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.633834 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.633912 #9529]  INFO -- : Started GET "/assets/tv_2-1d7da1df28ba9429315c6135887515ef9b56616960a18953da249ef82257cb46.jpg" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:03:31.642411 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.642474 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.642549 #9529]  INFO -- : Started GET "/assets/mob_4-3673b526b53cc84a487832e1dbe201081d6be523db58a46ac677e8df8268956a.jpg" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:03:31.650975 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.651034 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.651108 #9529]  INFO -- : Started GET "/assets/tv_3-39ec1d75e455707b670308771ae6bba3608e839e987c328693e8b4be6a60007d.jpg" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:03:31.660501 #9529] DEBUG -- : 
+D, [2016-01-11T14:03:31.660567 #9529] DEBUG -- : 
+I, [2016-01-11T14:03:31.660648 #9529]  INFO -- : Started GET "/assets/mob_5-ba3730460ab2a0654d8edfbf3184ef9ea70b0ca6342b866b1c078ecfa22d82e0.jpg" for 127.0.0.1 at 2016-01-11 14:03:31 +0530
+D, [2016-01-11T14:10:23.092986 #10501] DEBUG -- : 
+D, [2016-01-11T14:10:23.093082 #10501] DEBUG -- : 
+I, [2016-01-11T14:10:23.093288 #10501]  INFO -- : Started GET "/shops/product" for 127.0.0.1 at 2016-01-11 14:10:23 +0530
+D, [2016-01-11T14:10:23.189104 #10501] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (2.8ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+I, [2016-01-11T14:10:23.268353 #10501]  INFO -- : Processing by ShopsController#product as HTML
+D, [2016-01-11T14:10:23.468642 #10501] DEBUG -- :   [1m[35mUser Load (2.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+D, [2016-01-11T14:10:23.495017 #10501] DEBUG -- :   [1m[36mProduct Load (5.0ms)[0m  [1mSELECT  `products`.* FROM `products` LIMIT 8 OFFSET 0[0m
+D, [2016-01-11T14:10:23.558161 #10501] DEBUG -- :   [1m[35m (4.0ms)[0m  SELECT COUNT(*) FROM `products`
+I, [2016-01-11T14:10:23.799330 #10501]  INFO -- :   Rendered shops/product.html.erb within layouts/application (430.8ms)
+D, [2016-01-11T14:10:24.339447 #10501] DEBUG -- :   [1m[36mWishlist Load (2.0ms)[0m  [1mSELECT `wishlists`.* FROM `wishlists` WHERE `wishlists`.`user_id` = 2[0m
+I, [2016-01-11T14:10:24.339908 #10501]  INFO -- :   Rendered layouts/_wish.html.erb (168.6ms)
+D, [2016-01-11T14:10:24.383905 #10501] DEBUG -- :   [1m[35mRole Load (2.4ms)[0m  SELECT  `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1
+D, [2016-01-11T14:10:24.437178 #10501] DEBUG -- :   [1m[36mCart Load (2.6ms)[0m  [1mSELECT `carts`.* FROM `carts` WHERE `carts`.`user_id` = 2[0m
+D, [2016-01-11T14:10:24.460142 #10501] DEBUG -- :   [1m[35m (2.4ms)[0m  SELECT `carts`.`product_id` FROM `carts` WHERE `carts`.`user_id` = 2
+D, [2016-01-11T14:10:24.463436 #10501] DEBUG -- :   [1m[36mProduct Load (2.4ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1[0m
+D, [2016-01-11T14:10:24.464069 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1  [["id", 5]]
+D, [2016-01-11T14:10:24.467117 #10501] DEBUG -- :   [1m[36mProduct Load (2.6ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1[0m
+D, [2016-01-11T14:10:24.467646 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1  [["id", 5]]
+D, [2016-01-11T14:10:24.470466 #10501] DEBUG -- :   [1m[36mProduct Load (2.4ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+D, [2016-01-11T14:10:24.474528 #10501] DEBUG -- :   [1m[35mProduct Load (3.5ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 13 LIMIT 1
+D, [2016-01-11T14:10:24.477676 #10501] DEBUG -- :   [1m[36mProduct Load (2.6ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+D, [2016-01-11T14:10:24.478061 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1  [["id", 8]]
+D, [2016-01-11T14:10:24.480795 #10501] DEBUG -- :   [1m[36mProduct Load (2.4ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+D, [2016-01-11T14:10:24.481208 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1  [["id", 10]]
+D, [2016-01-11T14:10:24.481503 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m  [["id", 10]]
+D, [2016-01-11T14:10:24.486129 #10501] DEBUG -- :   [1m[35mProduct Load (4.4ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+D, [2016-01-11T14:10:24.486562 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+D, [2016-01-11T14:10:24.486808 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1  [["id", 1]]
+D, [2016-01-11T14:10:24.487043 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+D, [2016-01-11T14:10:24.487279 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1  [["id", 1]]
+D, [2016-01-11T14:10:24.487741 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+D, [2016-01-11T14:10:24.488055 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1  [["id", 2]]
+D, [2016-01-11T14:10:24.488345 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1[0m  [["id", 4]]
+D, [2016-01-11T14:10:24.488566 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1  [["id", 4]]
+D, [2016-01-11T14:10:24.488781 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1[0m  [["id", 4]]
+D, [2016-01-11T14:10:24.488996 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1  [["id", 4]]
+D, [2016-01-11T14:10:24.491801 #10501] DEBUG -- :   [1m[36m (2.0ms)[0m  [1mSELECT COUNT(*) FROM `carts` WHERE `carts`.`user_id` = 2[0m
+I, [2016-01-11T14:10:24.491988 #10501]  INFO -- :   Rendered layouts/_dynamic_cart.html.erb (103.0ms)
+I, [2016-01-11T14:10:24.492095 #10501]  INFO -- :   Rendered layouts/_header.html.erb (322.5ms)
+D, [2016-01-11T14:10:24.498693 #10501] DEBUG -- :   [1m[35mCategory Load (2.0ms)[0m  SELECT `categories`.* FROM `categories`
+I, [2016-01-11T14:10:24.540937 #10501]  INFO -- :   Rendered layouts/_footer.html.erb (48.1ms)
+I, [2016-01-11T14:10:24.541317 #10501]  INFO -- : Completed 200 OK in 1273ms (Views: 914.4ms | ActiveRecord: 298.3ms)
+D, [2016-01-11T14:10:24.599969 #10501] DEBUG -- : 
+D, [2016-01-11T14:10:24.600041 #10501] DEBUG -- : 
+I, [2016-01-11T14:10:24.600143 #10501]  INFO -- : Started GET "/shops/css/owl.carousel.css" for 127.0.0.1 at 2016-01-11 14:10:24 +0530
+F, [2016-01-11T14:10:24.606259 #10501] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/shops/css/owl.carousel.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  thin (1.6.4) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.4) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.4) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.4) lib/thin/connection.rb:53:in `process'
+  thin (1.6.4) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.8) lib/eventmachine.rb:193:in `run_machine'
+  eventmachine (1.0.8) lib/eventmachine.rb:193:in `run'
+  thin (1.6.4) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.4) lib/thin/server.rb:162:in `start'
+  rack (1.6.4) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.4) lib/rack/server.rb:286:in `start'
+  railties (4.2.4) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:75:in `tap'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.4) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:9:in `require'
+  bin/rails:9:in `<top (required)>'
+  spring (1.6.0) lib/spring/client/rails.rb:28:in `load'
+  spring (1.6.0) lib/spring/client/rails.rb:28:in `call'
+  spring (1.6.0) lib/spring/client/command.rb:7:in `call'
+  spring (1.6.0) lib/spring/client.rb:28:in `run'
+  spring (1.6.0) bin/spring:51:in `<top (required)>'
+  spring (1.6.0) lib/spring/binstub.rb:11:in `load'
+  spring (1.6.0) lib/spring/binstub.rb:11:in `<top (required)>'
+  /usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+  /usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+  bin/spring:13:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2016-01-11T14:10:24.657213 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+I, [2016-01-11T14:10:24.811834 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.5ms)
+I, [2016-01-11T14:10:24.873479 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (58.2ms)
+I, [2016-01-11T14:10:24.878968 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+I, [2016-01-11T14:10:24.879077 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (228.7ms)
+I, [2016-01-11T14:10:24.892192 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+I, [2016-01-11T14:10:24.902124 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+I, [2016-01-11T14:10:24.906958 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+I, [2016-01-11T14:10:24.910951 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+I, [2016-01-11T14:10:24.911478 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (15.1ms)
+I, [2016-01-11T14:10:24.916292 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+I, [2016-01-11T14:10:24.921129 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+I, [2016-01-11T14:10:24.921287 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (33.4ms)
+D, [2016-01-11T14:10:24.922036 #10501] DEBUG -- : 
+D, [2016-01-11T14:10:24.922085 #10501] DEBUG -- : 
+I, [2016-01-11T14:10:24.922176 #10501]  INFO -- : Started GET "/shops/style.css" for 127.0.0.1 at 2016-01-11 14:10:24 +0530
+I, [2016-01-11T14:10:24.927312 #10501]  INFO -- : Processing by ShopsController#show as CSS
+I, [2016-01-11T14:10:24.928040 #10501]  INFO -- :   Parameters: {"id"=>"style"}
+D, [2016-01-11T14:10:24.933517 #10501] DEBUG -- :   [1m[36mCategory Load (4.1ms)[0m  [1mSELECT  `categories`.* FROM `categories` WHERE `categories`.`id` = 0 LIMIT 1[0m
+I, [2016-01-11T14:10:24.934426 #10501]  INFO -- : Completed 404 Not Found in 6ms (ActiveRecord: 4.1ms)
+F, [2016-01-11T14:10:24.936387 #10501] FATAL -- : 
+ActiveRecord::RecordNotFound (Couldn't find Category with 'id'=style):
+  app/controllers/shops_controller.rb:46:in `show'
+
+
+I, [2016-01-11T14:10:25.160454 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.2ms)
+I, [2016-01-11T14:10:25.168135 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+I, [2016-01-11T14:10:25.173108 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2016-01-11T14:10:25.173210 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.0ms)
+I, [2016-01-11T14:10:25.180460 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+I, [2016-01-11T14:10:25.189380 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+I, [2016-01-11T14:10:25.195245 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+I, [2016-01-11T14:10:25.251728 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+I, [2016-01-11T14:10:25.252289 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (68.1ms)
+I, [2016-01-11T14:10:25.257673 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+I, [2016-01-11T14:10:25.262028 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+I, [2016-01-11T14:10:25.262201 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (85.3ms)
+D, [2016-01-11T14:10:25.262914 #10501] DEBUG -- : 
+D, [2016-01-11T14:10:25.262963 #10501] DEBUG -- : 
+I, [2016-01-11T14:10:25.263052 #10501]  INFO -- : Started GET "/shops/css/responsive.css" for 127.0.0.1 at 2016-01-11 14:10:25 +0530
+F, [2016-01-11T14:10:25.269676 #10501] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/shops/css/responsive.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  thin (1.6.4) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.4) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.4) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.4) lib/thin/connection.rb:53:in `process'
+  thin (1.6.4) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.8) lib/eventmachine.rb:193:in `run_machine'
+  eventmachine (1.0.8) lib/eventmachine.rb:193:in `run'
+  thin (1.6.4) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.4) lib/thin/server.rb:162:in `start'
+  rack (1.6.4) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.4) lib/rack/server.rb:286:in `start'
+  railties (4.2.4) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:75:in `tap'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.4) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:9:in `require'
+  bin/rails:9:in `<top (required)>'
+  spring (1.6.0) lib/spring/client/rails.rb:28:in `load'
+  spring (1.6.0) lib/spring/client/rails.rb:28:in `call'
+  spring (1.6.0) lib/spring/client/command.rb:7:in `call'
+  spring (1.6.0) lib/spring/client.rb:28:in `run'
+  spring (1.6.0) bin/spring:51:in `<top (required)>'
+  spring (1.6.0) lib/spring/binstub.rb:11:in `load'
+  spring (1.6.0) lib/spring/binstub.rb:11:in `<top (required)>'
+  /usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+  /usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+  bin/spring:13:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2016-01-11T14:10:25.313147 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+I, [2016-01-11T14:10:25.406654 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.6ms)
+I, [2016-01-11T14:10:25.411980 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+I, [2016-01-11T14:10:25.418646 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+I, [2016-01-11T14:10:25.418868 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (111.8ms)
+I, [2016-01-11T14:10:25.426923 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+I, [2016-01-11T14:10:25.435698 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+I, [2016-01-11T14:10:25.440319 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+I, [2016-01-11T14:10:25.444829 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+I, [2016-01-11T14:10:25.445692 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (15.2ms)
+I, [2016-01-11T14:10:25.450233 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+I, [2016-01-11T14:10:25.454215 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+I, [2016-01-11T14:10:25.454343 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (31.4ms)
+D, [2016-01-11T14:10:28.996083 #10501] DEBUG -- : 
+D, [2016-01-11T14:10:28.996155 #10501] DEBUG -- : 
+I, [2016-01-11T14:10:28.996260 #10501]  INFO -- : Started GET "/shops/product" for 127.0.0.1 at 2016-01-11 14:10:28 +0530
+I, [2016-01-11T14:10:29.003336 #10501]  INFO -- : Processing by ShopsController#product as HTML
+D, [2016-01-11T14:10:29.010702 #10501] DEBUG -- :   [1m[35mUser Load (2.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+D, [2016-01-11T14:10:29.013985 #10501] DEBUG -- :   [1m[36mProduct Load (2.5ms)[0m  [1mSELECT  `products`.* FROM `products` LIMIT 8 OFFSET 0[0m
+D, [2016-01-11T14:10:29.018115 #10501] DEBUG -- :   [1m[35m (2.8ms)[0m  SELECT COUNT(*) FROM `products`
+I, [2016-01-11T14:10:29.044129 #10501]  INFO -- :   Rendered shops/product.html.erb within layouts/application (37.6ms)
+D, [2016-01-11T14:10:29.295191 #10501] DEBUG -- :   [1m[36mWishlist Load (2.1ms)[0m  [1mSELECT `wishlists`.* FROM `wishlists` WHERE `wishlists`.`user_id` = 2[0m
+I, [2016-01-11T14:10:29.295429 #10501]  INFO -- :   Rendered layouts/_wish.html.erb (3.5ms)
+D, [2016-01-11T14:10:29.298468 #10501] DEBUG -- :   [1m[35mRole Load (2.5ms)[0m  SELECT  `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1
+D, [2016-01-11T14:10:29.303009 #10501] DEBUG -- :   [1m[36mCart Load (2.0ms)[0m  [1mSELECT `carts`.* FROM `carts` WHERE `carts`.`user_id` = 2[0m
+D, [2016-01-11T14:10:29.307796 #10501] DEBUG -- :   [1m[35m (3.0ms)[0m  SELECT `carts`.`product_id` FROM `carts` WHERE `carts`.`user_id` = 2
+D, [2016-01-11T14:10:29.311383 #10501] DEBUG -- :   [1m[36mProduct Load (3.1ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1[0m
+D, [2016-01-11T14:10:29.311868 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1  [["id", 5]]
+D, [2016-01-11T14:10:29.316918 #10501] DEBUG -- :   [1m[36mProduct Load (4.8ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1[0m
+D, [2016-01-11T14:10:29.317362 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1  [["id", 5]]
+D, [2016-01-11T14:10:29.320703 #10501] DEBUG -- :   [1m[36mProduct Load (3.1ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+D, [2016-01-11T14:10:29.323676 #10501] DEBUG -- :   [1m[35mProduct Load (2.6ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 13 LIMIT 1
+D, [2016-01-11T14:10:29.326586 #10501] DEBUG -- :   [1m[36mProduct Load (2.6ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+D, [2016-01-11T14:10:29.326892 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1  [["id", 8]]
+D, [2016-01-11T14:10:29.329517 #10501] DEBUG -- :   [1m[36mProduct Load (2.4ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+D, [2016-01-11T14:10:29.329822 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1  [["id", 10]]
+D, [2016-01-11T14:10:29.330073 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m  [["id", 10]]
+D, [2016-01-11T14:10:29.332571 #10501] DEBUG -- :   [1m[35mProduct Load (2.3ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+D, [2016-01-11T14:10:29.333006 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+D, [2016-01-11T14:10:29.333231 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1  [["id", 1]]
+D, [2016-01-11T14:10:29.333446 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+D, [2016-01-11T14:10:29.333658 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1  [["id", 1]]
+D, [2016-01-11T14:10:29.333953 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+D, [2016-01-11T14:10:29.334187 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1  [["id", 2]]
+D, [2016-01-11T14:10:29.334457 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1[0m  [["id", 4]]
+D, [2016-01-11T14:10:29.334676 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1  [["id", 4]]
+D, [2016-01-11T14:10:29.334879 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1[0m  [["id", 4]]
+D, [2016-01-11T14:10:29.335080 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1  [["id", 4]]
+D, [2016-01-11T14:10:29.338650 #10501] DEBUG -- :   [1m[36m (2.8ms)[0m  [1mSELECT COUNT(*) FROM `carts` WHERE `carts`.`user_id` = 2[0m
+I, [2016-01-11T14:10:29.338849 #10501]  INFO -- :   Rendered layouts/_dynamic_cart.html.erb (39.4ms)
+I, [2016-01-11T14:10:29.338958 #10501]  INFO -- :   Rendered layouts/_header.html.erb (48.8ms)
+D, [2016-01-11T14:10:29.343370 #10501] DEBUG -- :   [1m[35mCategory Load (2.2ms)[0m  SELECT `categories`.* FROM `categories`
+I, [2016-01-11T14:10:29.344133 #10501]  INFO -- :   Rendered layouts/_footer.html.erb (4.4ms)
+I, [2016-01-11T14:10:29.344416 #10501]  INFO -- : Completed 200 OK in 341ms (Views: 296.9ms | ActiveRecord: 43.1ms)
+D, [2016-01-11T14:10:36.428343 #10501] DEBUG -- : 
+D, [2016-01-11T14:10:36.428413 #10501] DEBUG -- : 
+I, [2016-01-11T14:10:36.428511 #10501]  INFO -- : Started GET "/" for 127.0.0.1 at 2016-01-11 14:10:36 +0530
+I, [2016-01-11T14:10:36.434731 #10501]  INFO -- : Processing by ShopsController#index as HTML
+D, [2016-01-11T14:10:36.438516 #10501] DEBUG -- :   [1m[36mProduct Load (2.1ms)[0m  [1mSELECT  `products`.* FROM `products`  ORDER BY `products`.`id` DESC LIMIT 4[0m
+D, [2016-01-11T14:10:36.445537 #10501] DEBUG -- :   [1m[35mUser Load (2.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+I, [2016-01-11T14:10:36.469528 #10501]  INFO -- :   Rendered shops/index.html.erb within layouts/application (28.6ms)
+D, [2016-01-11T14:10:36.735535 #10501] DEBUG -- :   [1m[36mWishlist Load (4.6ms)[0m  [1mSELECT `wishlists`.* FROM `wishlists` WHERE `wishlists`.`user_id` = 2[0m
+I, [2016-01-11T14:10:36.735840 #10501]  INFO -- :   Rendered layouts/_wish.html.erb (5.8ms)
+D, [2016-01-11T14:10:36.740372 #10501] DEBUG -- :   [1m[35mRole Load (4.0ms)[0m  SELECT  `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1
+D, [2016-01-11T14:10:36.745971 #10501] DEBUG -- :   [1m[36mCart Load (4.1ms)[0m  [1mSELECT `carts`.* FROM `carts` WHERE `carts`.`user_id` = 2[0m
+D, [2016-01-11T14:10:36.750907 #10501] DEBUG -- :   [1m[35m (2.8ms)[0m  SELECT `carts`.`product_id` FROM `carts` WHERE `carts`.`user_id` = 2
+D, [2016-01-11T14:10:36.754685 #10501] DEBUG -- :   [1m[36mProduct Load (3.3ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1[0m
+D, [2016-01-11T14:10:36.755200 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1  [["id", 5]]
+D, [2016-01-11T14:10:36.757628 #10501] DEBUG -- :   [1m[36mProduct Load (2.2ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1[0m
+D, [2016-01-11T14:10:36.757926 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1  [["id", 5]]
+D, [2016-01-11T14:10:36.760569 #10501] DEBUG -- :   [1m[36mProduct Load (2.4ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+D, [2016-01-11T14:10:36.764508 #10501] DEBUG -- :   [1m[35mProduct Load (3.6ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 13 LIMIT 1
+D, [2016-01-11T14:10:36.770969 #10501] DEBUG -- :   [1m[36mProduct Load (5.9ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+D, [2016-01-11T14:10:36.771619 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1  [["id", 8]]
+D, [2016-01-11T14:10:36.774004 #10501] DEBUG -- :   [1m[36mProduct Load (2.2ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+D, [2016-01-11T14:10:36.774313 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1  [["id", 10]]
+D, [2016-01-11T14:10:36.774552 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m  [["id", 10]]
+D, [2016-01-11T14:10:36.776959 #10501] DEBUG -- :   [1m[35mProduct Load (2.2ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+D, [2016-01-11T14:10:36.777269 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+D, [2016-01-11T14:10:36.777505 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1  [["id", 1]]
+D, [2016-01-11T14:10:36.777730 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+D, [2016-01-11T14:10:36.777950 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1  [["id", 1]]
+D, [2016-01-11T14:10:36.778167 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+D, [2016-01-11T14:10:36.778385 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1  [["id", 2]]
+D, [2016-01-11T14:10:36.778605 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1[0m  [["id", 4]]
+D, [2016-01-11T14:10:36.778821 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1  [["id", 4]]
+D, [2016-01-11T14:10:36.779097 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1[0m  [["id", 4]]
+D, [2016-01-11T14:10:36.779377 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1  [["id", 4]]
+D, [2016-01-11T14:10:36.782349 #10501] DEBUG -- :   [1m[36m (2.1ms)[0m  [1mSELECT COUNT(*) FROM `carts` WHERE `carts`.`user_id` = 2[0m
+I, [2016-01-11T14:10:36.782572 #10501]  INFO -- :   Rendered layouts/_dynamic_cart.html.erb (41.4ms)
+I, [2016-01-11T14:10:36.782671 #10501]  INFO -- :   Rendered layouts/_header.html.erb (53.3ms)
+D, [2016-01-11T14:10:36.786987 #10501] DEBUG -- :   [1m[35mCategory Load (2.9ms)[0m  SELECT `categories`.* FROM `categories`
+I, [2016-01-11T14:10:36.788553 #10501]  INFO -- :   Rendered layouts/_footer.html.erb (5.2ms)
+I, [2016-01-11T14:10:36.788957 #10501]  INFO -- : Completed 200 OK in 354ms (Views: 305.2ms | ActiveRecord: 46.7ms)
+D, [2016-01-11T14:10:36.790423 #10501] DEBUG -- : 
+D, [2016-01-11T14:10:36.790532 #10501] DEBUG -- : 
+I, [2016-01-11T14:10:36.790674 #10501]  INFO -- : Started GET "/" for 127.0.0.1 at 2016-01-11 14:10:36 +0530
+I, [2016-01-11T14:10:36.795730 #10501]  INFO -- : Processing by ShopsController#index as HTML
+D, [2016-01-11T14:10:36.798676 #10501] DEBUG -- :   [1m[36mProduct Load (2.0ms)[0m  [1mSELECT  `products`.* FROM `products`  ORDER BY `products`.`id` DESC LIMIT 4[0m
+D, [2016-01-11T14:10:36.808731 #10501] DEBUG -- :   [1m[35mUser Load (7.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+I, [2016-01-11T14:10:36.831019 #10501]  INFO -- :   Rendered shops/index.html.erb within layouts/application (30.1ms)
+D, [2016-01-11T14:10:37.103656 #10501] DEBUG -- :   [1m[36mWishlist Load (2.3ms)[0m  [1mSELECT `wishlists`.* FROM `wishlists` WHERE `wishlists`.`user_id` = 2[0m
+I, [2016-01-11T14:10:37.103872 #10501]  INFO -- :   Rendered layouts/_wish.html.erb (3.3ms)
+D, [2016-01-11T14:10:37.106905 #10501] DEBUG -- :   [1m[35mRole Load (2.6ms)[0m  SELECT  `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1
+D, [2016-01-11T14:10:37.110971 #10501] DEBUG -- :   [1m[36mCart Load (2.8ms)[0m  [1mSELECT `carts`.* FROM `carts` WHERE `carts`.`user_id` = 2[0m
+D, [2016-01-11T14:10:37.114927 #10501] DEBUG -- :   [1m[35m (2.0ms)[0m  SELECT `carts`.`product_id` FROM `carts` WHERE `carts`.`user_id` = 2
+D, [2016-01-11T14:10:37.120592 #10501] DEBUG -- :   [1m[36mProduct Load (5.3ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1[0m
+D, [2016-01-11T14:10:37.121086 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1  [["id", 5]]
+D, [2016-01-11T14:10:37.123267 #10501] DEBUG -- :   [1m[36mProduct Load (2.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1[0m
+D, [2016-01-11T14:10:37.123568 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1  [["id", 5]]
+D, [2016-01-11T14:10:37.128044 #10501] DEBUG -- :   [1m[36mProduct Load (4.2ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+D, [2016-01-11T14:10:37.131671 #10501] DEBUG -- :   [1m[35mProduct Load (3.2ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 13 LIMIT 1
+D, [2016-01-11T14:10:37.135012 #10501] DEBUG -- :   [1m[36mProduct Load (3.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+D, [2016-01-11T14:10:37.135302 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1  [["id", 8]]
+D, [2016-01-11T14:10:37.138571 #10501] DEBUG -- :   [1m[36mProduct Load (3.1ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+D, [2016-01-11T14:10:37.138909 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1  [["id", 10]]
+D, [2016-01-11T14:10:37.139145 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m  [["id", 10]]
+D, [2016-01-11T14:10:37.141501 #10501] DEBUG -- :   [1m[35mProduct Load (2.1ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+D, [2016-01-11T14:10:37.141811 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+D, [2016-01-11T14:10:37.142049 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1  [["id", 1]]
+D, [2016-01-11T14:10:37.142289 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+D, [2016-01-11T14:10:37.142514 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1  [["id", 1]]
+D, [2016-01-11T14:10:37.142739 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+D, [2016-01-11T14:10:37.142959 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1  [["id", 2]]
+D, [2016-01-11T14:10:37.143181 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1[0m  [["id", 4]]
+D, [2016-01-11T14:10:37.143395 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1  [["id", 4]]
+D, [2016-01-11T14:10:37.143601 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1[0m  [["id", 4]]
+D, [2016-01-11T14:10:37.143816 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1  [["id", 4]]
+D, [2016-01-11T14:10:37.146468 #10501] DEBUG -- :   [1m[36m (2.0ms)[0m  [1mSELECT COUNT(*) FROM `carts` WHERE `carts`.`user_id` = 2[0m
+I, [2016-01-11T14:10:37.146664 #10501]  INFO -- :   Rendered layouts/_dynamic_cart.html.erb (39.0ms)
+I, [2016-01-11T14:10:37.146759 #10501]  INFO -- :   Rendered layouts/_header.html.erb (46.8ms)
+D, [2016-01-11T14:10:37.152450 #10501] DEBUG -- :   [1m[35mCategory Load (4.2ms)[0m  SELECT `categories`.* FROM `categories`
+I, [2016-01-11T14:10:37.153292 #10501]  INFO -- :   Rendered layouts/_footer.html.erb (5.9ms)
+I, [2016-01-11T14:10:37.153618 #10501]  INFO -- : Completed 200 OK in 358ms (Views: 308.5ms | ActiveRecord: 47.8ms)
+D, [2016-01-11T14:10:37.226637 #10501] DEBUG -- : 
+D, [2016-01-11T14:10:37.226716 #10501] DEBUG -- : 
+I, [2016-01-11T14:10:37.226819 #10501]  INFO -- : Started GET "/css/owl.carousel.css" for 127.0.0.1 at 2016-01-11 14:10:37 +0530
+F, [2016-01-11T14:10:37.232924 #10501] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/css/owl.carousel.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  thin (1.6.4) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.4) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.4) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.4) lib/thin/connection.rb:53:in `process'
+  thin (1.6.4) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.8) lib/eventmachine.rb:193:in `run_machine'
+  eventmachine (1.0.8) lib/eventmachine.rb:193:in `run'
+  thin (1.6.4) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.4) lib/thin/server.rb:162:in `start'
+  rack (1.6.4) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.4) lib/rack/server.rb:286:in `start'
+  railties (4.2.4) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:75:in `tap'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.4) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:9:in `require'
+  bin/rails:9:in `<top (required)>'
+  spring (1.6.0) lib/spring/client/rails.rb:28:in `load'
+  spring (1.6.0) lib/spring/client/rails.rb:28:in `call'
+  spring (1.6.0) lib/spring/client/command.rb:7:in `call'
+  spring (1.6.0) lib/spring/client.rb:28:in `run'
+  spring (1.6.0) bin/spring:51:in `<top (required)>'
+  spring (1.6.0) lib/spring/binstub.rb:11:in `load'
+  spring (1.6.0) lib/spring/binstub.rb:11:in `<top (required)>'
+  /usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+  /usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+  bin/spring:13:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2016-01-11T14:10:37.296230 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.4ms)
+I, [2016-01-11T14:10:37.434088 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.4ms)
+I, [2016-01-11T14:10:37.443229 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+I, [2016-01-11T14:10:37.453309 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+I, [2016-01-11T14:10:37.453447 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (175.0ms)
+I, [2016-01-11T14:10:37.465083 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+I, [2016-01-11T14:10:37.543878 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+I, [2016-01-11T14:10:37.548664 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+I, [2016-01-11T14:10:37.552799 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+I, [2016-01-11T14:10:37.553296 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (15.8ms)
+I, [2016-01-11T14:10:37.557328 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+I, [2016-01-11T14:10:37.561384 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+I, [2016-01-11T14:10:37.561518 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (104.3ms)
+D, [2016-01-11T14:10:37.562237 #10501] DEBUG -- : 
+D, [2016-01-11T14:10:37.562284 #10501] DEBUG -- : 
+I, [2016-01-11T14:10:37.562372 #10501]  INFO -- : Started GET "/style.css" for 127.0.0.1 at 2016-01-11 14:10:37 +0530
+F, [2016-01-11T14:10:37.571200 #10501] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/style.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  thin (1.6.4) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.4) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.4) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.4) lib/thin/connection.rb:53:in `process'
+  thin (1.6.4) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.8) lib/eventmachine.rb:193:in `run_machine'
+  eventmachine (1.0.8) lib/eventmachine.rb:193:in `run'
+  thin (1.6.4) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.4) lib/thin/server.rb:162:in `start'
+  rack (1.6.4) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.4) lib/rack/server.rb:286:in `start'
+  railties (4.2.4) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:75:in `tap'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.4) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:9:in `require'
+  bin/rails:9:in `<top (required)>'
+  spring (1.6.0) lib/spring/client/rails.rb:28:in `load'
+  spring (1.6.0) lib/spring/client/rails.rb:28:in `call'
+  spring (1.6.0) lib/spring/client/command.rb:7:in `call'
+  spring (1.6.0) lib/spring/client.rb:28:in `run'
+  spring (1.6.0) bin/spring:51:in `<top (required)>'
+  spring (1.6.0) lib/spring/binstub.rb:11:in `load'
+  spring (1.6.0) lib/spring/binstub.rb:11:in `<top (required)>'
+  /usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+  /usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+  bin/spring:13:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2016-01-11T14:10:37.617436 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+I, [2016-01-11T14:10:37.711016 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.5ms)
+I, [2016-01-11T14:10:37.715807 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+I, [2016-01-11T14:10:37.722316 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+I, [2016-01-11T14:10:37.722452 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (111.1ms)
+I, [2016-01-11T14:10:37.729924 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+I, [2016-01-11T14:10:37.738683 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+I, [2016-01-11T14:10:37.743222 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+I, [2016-01-11T14:10:37.747074 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+I, [2016-01-11T14:10:37.747520 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (14.1ms)
+I, [2016-01-11T14:10:37.751527 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+I, [2016-01-11T14:10:37.756643 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+I, [2016-01-11T14:10:37.756812 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (30.5ms)
+D, [2016-01-11T14:10:37.757458 #10501] DEBUG -- : 
+D, [2016-01-11T14:10:37.757498 #10501] DEBUG -- : 
+I, [2016-01-11T14:10:37.757581 #10501]  INFO -- : Started GET "/css/responsive.css" for 127.0.0.1 at 2016-01-11 14:10:37 +0530
+F, [2016-01-11T14:10:37.763733 #10501] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/css/responsive.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  thin (1.6.4) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.4) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.4) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.4) lib/thin/connection.rb:53:in `process'
+  thin (1.6.4) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.8) lib/eventmachine.rb:193:in `run_machine'
+  eventmachine (1.0.8) lib/eventmachine.rb:193:in `run'
+  thin (1.6.4) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.4) lib/thin/server.rb:162:in `start'
+  rack (1.6.4) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.4) lib/rack/server.rb:286:in `start'
+  railties (4.2.4) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:75:in `tap'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.4) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:9:in `require'
+  bin/rails:9:in `<top (required)>'
+  spring (1.6.0) lib/spring/client/rails.rb:28:in `load'
+  spring (1.6.0) lib/spring/client/rails.rb:28:in `call'
+  spring (1.6.0) lib/spring/client/command.rb:7:in `call'
+  spring (1.6.0) lib/spring/client.rb:28:in `run'
+  spring (1.6.0) bin/spring:51:in `<top (required)>'
+  spring (1.6.0) lib/spring/binstub.rb:11:in `load'
+  spring (1.6.0) lib/spring/binstub.rb:11:in `<top (required)>'
+  /usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+  /usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+  bin/spring:13:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2016-01-11T14:10:37.858316 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (55.5ms)
+I, [2016-01-11T14:10:37.955828 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.7ms)
+I, [2016-01-11T14:10:37.960866 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+I, [2016-01-11T14:10:37.967480 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+I, [2016-01-11T14:10:37.967660 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (168.9ms)
+I, [2016-01-11T14:10:37.975270 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+I, [2016-01-11T14:10:37.984150 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+I, [2016-01-11T14:10:37.988738 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+I, [2016-01-11T14:10:37.992633 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+I, [2016-01-11T14:10:37.993137 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (14.3ms)
+I, [2016-01-11T14:10:37.998268 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+I, [2016-01-11T14:10:38.002542 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+I, [2016-01-11T14:10:38.002686 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (31.1ms)
+D, [2016-01-11T14:11:21.076833 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:21.076940 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:21.077103 #10501]  INFO -- : Started GET "/" for 127.0.0.1 at 2016-01-11 14:11:21 +0530
+I, [2016-01-11T14:11:21.084402 #10501]  INFO -- : Processing by ShopsController#index as HTML
+D, [2016-01-11T14:11:21.088508 #10501] DEBUG -- :   [1m[36mProduct Load (2.4ms)[0m  [1mSELECT  `products`.* FROM `products`  ORDER BY `products`.`id` DESC LIMIT 4[0m
+D, [2016-01-11T14:11:21.094982 #10501] DEBUG -- :   [1m[35mUser Load (2.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+I, [2016-01-11T14:11:21.118476 #10501]  INFO -- :   Rendered shops/index.html.erb within layouts/application (26.4ms)
+D, [2016-01-11T14:11:21.381047 #10501] DEBUG -- :   [1m[36mWishlist Load (2.3ms)[0m  [1mSELECT `wishlists`.* FROM `wishlists` WHERE `wishlists`.`user_id` = 2[0m
+I, [2016-01-11T14:11:21.381413 #10501]  INFO -- :   Rendered layouts/_wish.html.erb (3.5ms)
+D, [2016-01-11T14:11:21.384263 #10501] DEBUG -- :   [1m[35mRole Load (2.3ms)[0m  SELECT  `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1
+D, [2016-01-11T14:11:21.389607 #10501] DEBUG -- :   [1m[36mCart Load (4.0ms)[0m  [1mSELECT `carts`.* FROM `carts` WHERE `carts`.`user_id` = 2[0m
+D, [2016-01-11T14:11:21.394631 #10501] DEBUG -- :   [1m[35m (3.1ms)[0m  SELECT `carts`.`product_id` FROM `carts` WHERE `carts`.`user_id` = 2
+D, [2016-01-11T14:11:21.397656 #10501] DEBUG -- :   [1m[36mProduct Load (2.6ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1[0m
+D, [2016-01-11T14:11:21.398067 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1  [["id", 5]]
+D, [2016-01-11T14:11:21.400703 #10501] DEBUG -- :   [1m[36mProduct Load (2.4ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1[0m
+D, [2016-01-11T14:11:21.401004 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1  [["id", 5]]
+D, [2016-01-11T14:11:21.404498 #10501] DEBUG -- :   [1m[36mProduct Load (3.3ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+D, [2016-01-11T14:11:21.407406 #10501] DEBUG -- :   [1m[35mProduct Load (2.6ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 13 LIMIT 1
+D, [2016-01-11T14:11:21.410333 #10501] DEBUG -- :   [1m[36mProduct Load (2.6ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+D, [2016-01-11T14:11:21.410651 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1  [["id", 8]]
+D, [2016-01-11T14:11:21.414039 #10501] DEBUG -- :   [1m[36mProduct Load (3.2ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+D, [2016-01-11T14:11:21.414399 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1  [["id", 10]]
+D, [2016-01-11T14:11:21.414614 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m  [["id", 10]]
+D, [2016-01-11T14:11:21.417958 #10501] DEBUG -- :   [1m[35mProduct Load (3.1ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+D, [2016-01-11T14:11:21.418302 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+D, [2016-01-11T14:11:21.418512 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1  [["id", 1]]
+D, [2016-01-11T14:11:21.418734 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+D, [2016-01-11T14:11:21.418944 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1  [["id", 1]]
+D, [2016-01-11T14:11:21.419152 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+D, [2016-01-11T14:11:21.419359 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1  [["id", 2]]
+D, [2016-01-11T14:11:21.419568 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1[0m  [["id", 4]]
+D, [2016-01-11T14:11:21.419788 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1  [["id", 4]]
+D, [2016-01-11T14:11:21.420005 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1[0m  [["id", 4]]
+D, [2016-01-11T14:11:21.420218 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1  [["id", 4]]
+D, [2016-01-11T14:11:21.425300 #10501] DEBUG -- :   [1m[36m (4.4ms)[0m  [1mSELECT COUNT(*) FROM `carts` WHERE `carts`.`user_id` = 2[0m
+I, [2016-01-11T14:11:21.425545 #10501]  INFO -- :   Rendered layouts/_dynamic_cart.html.erb (40.5ms)
+I, [2016-01-11T14:11:21.425643 #10501]  INFO -- :   Rendered layouts/_header.html.erb (48.4ms)
+D, [2016-01-11T14:11:21.429929 #10501] DEBUG -- :   [1m[35mCategory Load (3.1ms)[0m  SELECT `categories`.* FROM `categories`
+I, [2016-01-11T14:11:21.430642 #10501]  INFO -- :   Rendered layouts/_footer.html.erb (4.4ms)
+I, [2016-01-11T14:11:21.430940 #10501]  INFO -- : Completed 200 OK in 346ms (Views: 300.4ms | ActiveRecord: 43.5ms)
+D, [2016-01-11T14:11:21.455853 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:21.455928 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:21.456110 #10501]  INFO -- : Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-11 14:11:21 +0530
+D, [2016-01-11T14:11:21.467324 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:21.467387 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:21.467516 #10501]  INFO -- : Started GET "/assets/admin/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-11 14:11:21 +0530
+D, [2016-01-11T14:11:21.479931 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:21.479997 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:21.480135 #10501]  INFO -- : Started GET "/assets/admin/dashboard.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-11 14:11:21 +0530
+D, [2016-01-11T14:11:21.487773 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:21.487838 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:21.488050 #10501]  INFO -- : Started GET "/assets/admin/gallery.self-5611eb4a5c40418498199454c4083204e06be0e2f9ca07cf7bdbfebad8f2f0fc.css?body=1" for 127.0.0.1 at 2016-01-11 14:11:21 +0530
+D, [2016-01-11T14:11:21.498580 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:21.498646 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:21.498773 #10501]  INFO -- : Started GET "/assets/admin/layout.self-1d8ab45fbe4de6c5bdbdb57e331ceb68bbb0f65418a9dcbcfc246290dd4bf775.css?body=1" for 127.0.0.1 at 2016-01-11 14:11:21 +0530
+D, [2016-01-11T14:11:21.514818 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:21.514879 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:21.515002 #10501]  INFO -- : Started GET "/assets/admin/products.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-11 14:11:21 +0530
+D, [2016-01-11T14:11:21.527267 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:21.527333 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:21.527460 #10501]  INFO -- : Started GET "/assets/admin/roles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-11 14:11:21 +0530
+D, [2016-01-11T14:11:21.537784 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:21.537847 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:21.537974 #10501]  INFO -- : Started GET "/assets/admin/orders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-11 14:11:21 +0530
+D, [2016-01-11T14:11:21.547161 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:21.547222 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:21.547344 #10501]  INFO -- : Started GET "/assets/admin/text.self-114472b2f863f0d91d05156551ff9657d47dfb4496dc6c26aaf56e3da76a0497.css?body=1" for 127.0.0.1 at 2016-01-11 14:11:21 +0530
+D, [2016-01-11T14:11:21.555725 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:21.555790 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:21.555915 #10501]  INFO -- : Started GET "/assets/admin/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-11 14:11:21 +0530
+D, [2016-01-11T14:11:21.565155 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:21.565221 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:21.565347 #10501]  INFO -- : Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-01-11 14:11:21 +0530
+D, [2016-01-11T14:11:21.576462 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:21.576565 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:21.576765 #10501]  INFO -- : Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 127.0.0.1 at 2016-01-11 14:11:21 +0530
+D, [2016-01-11T14:11:21.587114 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:21.587184 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:21.587315 #10501]  INFO -- : Started GET "/assets/cart.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-11 14:11:21 +0530
+D, [2016-01-11T14:11:21.596666 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:21.596728 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:21.596860 #10501]  INFO -- : Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-11 14:11:21 +0530
+D, [2016-01-11T14:11:21.605763 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:21.605825 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:21.605947 #10501]  INFO -- : Started GET "/assets/orders.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-11 14:11:21 +0530
+D, [2016-01-11T14:11:21.616029 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:21.616096 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:21.616222 #10501]  INFO -- : Started GET "/assets/owl.carousel.self-ad1798474744695e81071dda3d906ddadd86486a0677de386d35880426c72774.css?body=1" for 127.0.0.1 at 2016-01-11 14:11:21 +0530
+D, [2016-01-11T14:11:21.625341 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:21.625445 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:21.625702 #10501]  INFO -- : Started GET "/assets/checkout.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-11 14:11:21 +0530
+D, [2016-01-11T14:11:21.634592 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:21.634655 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:21.634779 #10501]  INFO -- : Started GET "/assets/products.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-11 14:11:21 +0530
+D, [2016-01-11T14:11:21.643644 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:21.643710 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:21.643836 #10501]  INFO -- : Started GET "/assets/responsive.self-234fcf9ff2b77f4b9250f1d7b25e3c6dbdf54455446e47d9e2f6e8565d0f37a0.css?body=1" for 127.0.0.1 at 2016-01-11 14:11:21 +0530
+D, [2016-01-11T14:11:21.656694 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:21.656761 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:21.656903 #10501]  INFO -- : Started GET "/assets/shop-homepage.self-3c9ee1ea8087e0f9031516c0862f06fba120e6795c05f32544c6cb72b8d4d249.css?body=1" for 127.0.0.1 at 2016-01-11 14:11:21 +0530
+D, [2016-01-11T14:11:21.666738 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:21.666796 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:21.666920 #10501]  INFO -- : Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-11 14:11:21 +0530
+D, [2016-01-11T14:11:21.679511 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:21.679569 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:21.679722 #10501]  INFO -- : Started GET "/assets/shops.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-11 14:11:21 +0530
+D, [2016-01-11T14:11:21.688147 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:21.688211 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:21.688285 #10501]  INFO -- : Started GET "/css/owl.carousel.css" for 127.0.0.1 at 2016-01-11 14:11:21 +0530
+F, [2016-01-11T14:11:21.696965 #10501] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/css/owl.carousel.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  thin (1.6.4) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.4) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.4) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.4) lib/thin/connection.rb:53:in `process'
+  thin (1.6.4) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.8) lib/eventmachine.rb:193:in `run_machine'
+  eventmachine (1.0.8) lib/eventmachine.rb:193:in `run'
+  thin (1.6.4) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.4) lib/thin/server.rb:162:in `start'
+  rack (1.6.4) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.4) lib/rack/server.rb:286:in `start'
+  railties (4.2.4) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:75:in `tap'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.4) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:9:in `require'
+  bin/rails:9:in `<top (required)>'
+  spring (1.6.0) lib/spring/client/rails.rb:28:in `load'
+  spring (1.6.0) lib/spring/client/rails.rb:28:in `call'
+  spring (1.6.0) lib/spring/client/command.rb:7:in `call'
+  spring (1.6.0) lib/spring/client.rb:28:in `run'
+  spring (1.6.0) bin/spring:51:in `<top (required)>'
+  spring (1.6.0) lib/spring/binstub.rb:11:in `load'
+  spring (1.6.0) lib/spring/binstub.rb:11:in `<top (required)>'
+  /usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+  /usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+  bin/spring:13:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2016-01-11T14:11:21.738170 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+I, [2016-01-11T14:11:21.897613 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.6ms)
+I, [2016-01-11T14:11:21.902715 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+I, [2016-01-11T14:11:21.908471 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+I, [2016-01-11T14:11:21.908684 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (176.6ms)
+I, [2016-01-11T14:11:21.917104 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+I, [2016-01-11T14:11:21.926245 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+I, [2016-01-11T14:11:21.931234 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+I, [2016-01-11T14:11:21.935462 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+I, [2016-01-11T14:11:21.935986 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (15.3ms)
+I, [2016-01-11T14:11:21.940500 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+I, [2016-01-11T14:11:21.945542 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+I, [2016-01-11T14:11:21.945713 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (32.6ms)
+D, [2016-01-11T14:11:21.946368 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:21.946412 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:21.946561 #10501]  INFO -- : Started GET "/assets/style.self-bc84e0f07e5980b1c7571a2aaf5d364908658b442ca1f41b64dc1d27c9e49123.css?body=1" for 127.0.0.1 at 2016-01-11 14:11:21 +0530
+D, [2016-01-11T14:11:21.955658 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:21.955722 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:21.955850 #10501]  INFO -- : Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-01-11 14:11:21 +0530
+D, [2016-01-11T14:11:21.969409 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:21.969494 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:21.969584 #10501]  INFO -- : Started GET "/style.css" for 127.0.0.1 at 2016-01-11 14:11:21 +0530
+F, [2016-01-11T14:11:21.978884 #10501] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/style.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  thin (1.6.4) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.4) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.4) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.4) lib/thin/connection.rb:53:in `process'
+  thin (1.6.4) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.8) lib/eventmachine.rb:193:in `run_machine'
+  eventmachine (1.0.8) lib/eventmachine.rb:193:in `run'
+  thin (1.6.4) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.4) lib/thin/server.rb:162:in `start'
+  rack (1.6.4) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.4) lib/rack/server.rb:286:in `start'
+  railties (4.2.4) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:75:in `tap'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.4) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:9:in `require'
+  bin/rails:9:in `<top (required)>'
+  spring (1.6.0) lib/spring/client/rails.rb:28:in `load'
+  spring (1.6.0) lib/spring/client/rails.rb:28:in `call'
+  spring (1.6.0) lib/spring/client/command.rb:7:in `call'
+  spring (1.6.0) lib/spring/client.rb:28:in `run'
+  spring (1.6.0) bin/spring:51:in `<top (required)>'
+  spring (1.6.0) lib/spring/binstub.rb:11:in `load'
+  spring (1.6.0) lib/spring/binstub.rb:11:in `<top (required)>'
+  /usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+  /usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+  bin/spring:13:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2016-01-11T14:11:22.022761 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+I, [2016-01-11T14:11:22.117832 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.5ms)
+I, [2016-01-11T14:11:22.122763 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+I, [2016-01-11T14:11:22.129229 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+I, [2016-01-11T14:11:22.129366 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (113.0ms)
+I, [2016-01-11T14:11:22.137084 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+I, [2016-01-11T14:11:22.145919 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+I, [2016-01-11T14:11:22.150528 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+I, [2016-01-11T14:11:22.155099 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+I, [2016-01-11T14:11:22.155985 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (15.4ms)
+I, [2016-01-11T14:11:22.160179 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+I, [2016-01-11T14:11:22.164138 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+I, [2016-01-11T14:11:22.164273 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (30.9ms)
+D, [2016-01-11T14:11:22.165046 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.165095 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.165184 #10501]  INFO -- : Started GET "/css/responsive.css" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+F, [2016-01-11T14:11:22.173805 #10501] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/css/responsive.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:22:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  thin (1.6.4) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.4) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.4) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.4) lib/thin/connection.rb:53:in `process'
+  thin (1.6.4) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.8) lib/eventmachine.rb:193:in `run_machine'
+  eventmachine (1.0.8) lib/eventmachine.rb:193:in `run'
+  thin (1.6.4) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.4) lib/thin/server.rb:162:in `start'
+  rack (1.6.4) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.4) lib/rack/server.rb:286:in `start'
+  railties (4.2.4) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:75:in `tap'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.4) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.4) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:9:in `require'
+  bin/rails:9:in `<top (required)>'
+  spring (1.6.0) lib/spring/client/rails.rb:28:in `load'
+  spring (1.6.0) lib/spring/client/rails.rb:28:in `call'
+  spring (1.6.0) lib/spring/client/command.rb:7:in `call'
+  spring (1.6.0) lib/spring/client.rb:28:in `run'
+  spring (1.6.0) bin/spring:51:in `<top (required)>'
+  spring (1.6.0) lib/spring/binstub.rb:11:in `load'
+  spring (1.6.0) lib/spring/binstub.rb:11:in `<top (required)>'
+  /usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+  /usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+  bin/spring:13:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+I, [2016-01-11T14:11:22.280676 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+I, [2016-01-11T14:11:22.377995 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.9ms)
+I, [2016-01-11T14:11:22.382985 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+I, [2016-01-11T14:11:22.388260 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+I, [2016-01-11T14:11:22.388368 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (115.3ms)
+I, [2016-01-11T14:11:22.395933 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+I, [2016-01-11T14:11:22.405386 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+I, [2016-01-11T14:11:22.410152 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+I, [2016-01-11T14:11:22.414097 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+I, [2016-01-11T14:11:22.414558 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (15.0ms)
+I, [2016-01-11T14:11:22.418469 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+I, [2016-01-11T14:11:22.422416 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+I, [2016-01-11T14:11:22.422541 #10501]  INFO -- :   Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (30.3ms)
+D, [2016-01-11T14:11:22.423152 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.423193 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.423330 #10501]  INFO -- : Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.430459 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.430525 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.430652 #10501]  INFO -- : Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.440025 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.440087 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.440216 #10501]  INFO -- : Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.448740 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.448947 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.449187 #10501]  INFO -- : Started GET "/assets/jquery.self-aedf0b4f9535e7b1d01d6a9ad81e6ecdb5b9a82acf17f3798645b7dbca2d86a1.js?body=1" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.457692 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.457762 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.457906 #10501]  INFO -- : Started GET "/assets/admin/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.465290 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.465480 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.465733 #10501]  INFO -- : Started GET "/assets/admin/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.473152 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.473214 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.473336 #10501]  INFO -- : Started GET "/assets/admin/dashboard.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.479381 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.479437 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.479565 #10501]  INFO -- : Started GET "/assets/admin/Gruntfile.self-a25be840678cc8602a8d0ab95a89b49a5c9fecb1340f45b943244d576fec7595.js?body=1" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.489466 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.489532 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.489667 #10501]  INFO -- : Started GET "/assets/admin/dashboard2.self-8b12cb30cc989bdcf5f00642868aa0610801de89379331195ef2cf8237af01bf.js?body=1" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.507989 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.508065 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.508208 #10501]  INFO -- : Started GET "/assets/admin/bootstrap.min.self-acc6a813b6dc0a695296b4fec3ca7fbc48269ab0b6345aa4c4acb64b80267dad.js?body=1" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.517956 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.518021 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.518150 #10501]  INFO -- : Started GET "/assets/admin/npm.self-f66d504f2cd5bddaaade9c854b02828e5e46d225517ab9feebe1af2615566b1e.js?body=1" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.536154 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.536223 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.536353 #10501]  INFO -- : Started GET "/assets/admin/orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.548455 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.548522 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.548655 #10501]  INFO -- : Started GET "/assets/admin/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.558178 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.558241 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.558375 #10501]  INFO -- : Started GET "/assets/admin/roles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.566503 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.566564 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.566692 #10501]  INFO -- : Started GET "/assets/admin/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.576450 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.576513 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.576641 #10501]  INFO -- : Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.586908 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.586972 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.587100 #10501]  INFO -- : Started GET "/assets/cart.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.594599 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.594655 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.594785 #10501]  INFO -- : Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.601358 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.601417 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.601552 #10501]  INFO -- : Started GET "/assets/checkout.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.612524 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.612627 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.612800 #10501]  INFO -- : Started GET "/assets/jquery.easing.1.3.min.self-ec8061d243f5b6fdde58173def6b03815ae7ad274c1399d4b9df5a2172be9952.js?body=1" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.621599 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.621663 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.621790 #10501]  INFO -- : Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.630068 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.630125 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.630246 #10501]  INFO -- : Started GET "/assets/main.self-7fff7727ef731424eca26fe72e01d9275a876cc242befbf8a3a26ee1dd3b871d.js?body=1" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.638702 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.638768 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.638897 #10501]  INFO -- : Started GET "/assets/jquery.sticky.self-e2625c28848cbca930c42cf94c85201372302f87978932e468d75466addc23e6.js?body=1" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.648641 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.648704 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.648834 #10501]  INFO -- : Started GET "/assets/orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.657442 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.657502 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.657627 #10501]  INFO -- : Started GET "/assets/owl.carousel.min.self-3c9f9dac2a281d1090601a8896fe59fb9df20f261295bbe087f2a0f56ef7e8d9.js?body=1" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.667017 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.667112 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.667288 #10501]  INFO -- : Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.678977 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.679040 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.679167 #10501]  INFO -- : Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.689198 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.689259 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.689397 #10501]  INFO -- : Started GET "/assets/shops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.696196 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.696251 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.696376 #10501]  INFO -- : Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.703726 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.703789 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.703865 #10501]  INFO -- : Started GET "/assets/lap_2-4e8236e671d61c8983b14265ab4f9b979eafa224faf100c0dfe50ad316e39322.jpg" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.785243 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.785326 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.785428 #10501]  INFO -- : Started GET "/assets/microsoft_logo-983ff16029ac46dbd18a22e107d60e8608c9af1f546daaadb5379573bfbbc981.png" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.794914 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.794996 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.795117 #10501]  INFO -- : Started GET "/assets/samsung_logo-4a70f5ea9714d596aa07ca3416c6fc1b40209fc577e13e4f73cb581227970765.jpg" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.802301 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.802363 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.802438 #10501]  INFO -- : Started GET "/assets/lap_5-87091f75525a585cdf821074878cf8da4806e7163b18343271064994c62861d8.jpg" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.808760 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.808887 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.809021 #10501]  INFO -- : Started GET "/assets/lap_4-0c5312a181eee90319e9e6830a2f7e39adc67123d723dbed85ed758ef19e64cc.jpg" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.817834 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.817974 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.818114 #10501]  INFO -- : Started GET "/assets/lap_3-c7b5bb53b5256d3bddacc4fca18b0b4052b319aca8edeed41ed41813d8dbf73e.jpg" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.826912 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.826981 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.827060 #10501]  INFO -- : Started GET "/assets/sony_logo-d6feaf9d22395d9b8321bbf7b620e8337f20b14f08314862d0d2c026563778b2.png" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.845247 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.845317 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.845407 #10501]  INFO -- : Started GET "/assets/apple_logo-345c849c94bfca37ef2b1cd07938c06989d36f1e4e492bdcedc3ff7119b90dac.jpg" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:22.854767 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:22.854834 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:22.854915 #10501]  INFO -- : Started GET "/assets/slide-1.jpg" for 127.0.0.1 at 2016-01-11 14:11:22 +0530
+D, [2016-01-11T14:11:26.206957 #10501] DEBUG -- : 
+D, [2016-01-11T14:11:26.207025 #10501] DEBUG -- : 
+I, [2016-01-11T14:11:26.207112 #10501]  INFO -- : Started GET "/shops/product" for 127.0.0.1 at 2016-01-11 14:11:26 +0530
+I, [2016-01-11T14:11:26.212312 #10501]  INFO -- : Processing by ShopsController#product as HTML
+D, [2016-01-11T14:11:26.217884 #10501] DEBUG -- :   [1m[36mUser Load (2.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+D, [2016-01-11T14:11:26.220840 #10501] DEBUG -- :   [1m[35mProduct Load (2.2ms)[0m  SELECT  `products`.* FROM `products` LIMIT 8 OFFSET 0
+D, [2016-01-11T14:11:26.224519 #10501] DEBUG -- :   [1m[36m (2.6ms)[0m  [1mSELECT COUNT(*) FROM `products`[0m
+I, [2016-01-11T14:11:26.253481 #10501]  INFO -- :   Rendered shops/product.html.erb within layouts/application (38.5ms)
+D, [2016-01-11T14:11:26.510639 #10501] DEBUG -- :   [1m[35mWishlist Load (2.3ms)[0m  SELECT `wishlists`.* FROM `wishlists` WHERE `wishlists`.`user_id` = 2
+I, [2016-01-11T14:11:26.510861 #10501]  INFO -- :   Rendered layouts/_wish.html.erb (3.3ms)
+D, [2016-01-11T14:11:26.514217 #10501] DEBUG -- :   [1m[36mRole Load (2.9ms)[0m  [1mSELECT  `roles`.* FROM `roles` WHERE `roles`.`id` = 2 LIMIT 1[0m
+D, [2016-01-11T14:11:26.521065 #10501] DEBUG -- :   [1m[35mCart Load (3.9ms)[0m  SELECT `carts`.* FROM `carts` WHERE `carts`.`user_id` = 2
+D, [2016-01-11T14:11:26.526897 #10501] DEBUG -- :   [1m[36m (3.9ms)[0m  [1mSELECT `carts`.`product_id` FROM `carts` WHERE `carts`.`user_id` = 2[0m
+D, [2016-01-11T14:11:26.531079 #10501] DEBUG -- :   [1m[35mProduct Load (3.8ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1
+D, [2016-01-11T14:11:26.531488 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1[0m  [["id", 5]]
+D, [2016-01-11T14:11:26.533701 #10501] DEBUG -- :   [1m[35mProduct Load (2.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1
+D, [2016-01-11T14:11:26.534063 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1[0m  [["id", 5]]
+D, [2016-01-11T14:11:26.536644 #10501] DEBUG -- :   [1m[35mProduct Load (2.3ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1
+D, [2016-01-11T14:11:26.539554 #10501] DEBUG -- :   [1m[36mProduct Load (2.6ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 13 LIMIT 1[0m
+D, [2016-01-11T14:11:26.542477 #10501] DEBUG -- :   [1m[35mProduct Load (2.6ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1
+D, [2016-01-11T14:11:26.542804 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m  [["id", 8]]
+D, [2016-01-11T14:11:26.545844 #10501] DEBUG -- :   [1m[35mProduct Load (2.8ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1
+D, [2016-01-11T14:11:26.546305 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m  [["id", 10]]
+D, [2016-01-11T14:11:26.546553 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1  [["id", 10]]
+D, [2016-01-11T14:11:26.548892 #10501] DEBUG -- :   [1m[36mProduct Load (2.1ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+D, [2016-01-11T14:11:26.549269 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1  [["id", 1]]
+D, [2016-01-11T14:11:26.549516 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+D, [2016-01-11T14:11:26.549756 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1  [["id", 1]]
+D, [2016-01-11T14:11:26.549989 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+D, [2016-01-11T14:11:26.550220 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1  [["id", 1]]
+D, [2016-01-11T14:11:26.550454 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+D, [2016-01-11T14:11:26.550684 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1  [["id", 4]]
+D, [2016-01-11T14:11:26.551055 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1[0m  [["id", 4]]
+D, [2016-01-11T14:11:26.551414 #10501] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1  [["id", 4]]
+D, [2016-01-11T14:11:26.551774 #10501] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1[0m  [["id", 4]]
+D, [2016-01-11T14:11:26.554425 #10501] DEBUG -- :   [1m[35m (2.0ms)[0m  SELECT COUNT(*) FROM `carts` WHERE `carts`.`user_id` = 2
+I, [2016-01-11T14:11:26.554617 #10501]  INFO -- :   Rendered layouts/_dynamic_cart.html.erb (39.3ms)
+I, [2016-01-11T14:11:26.554716 #10501]  INFO -- :   Rendered layouts/_header.html.erb (47.9ms)
+D, [2016-01-11T14:11:26.559077 #10501] DEBUG -- :   [1m[36mCategory Load (3.0ms)[0m  [1mSELECT `categories`.* FROM `categories`[0m
+I, [2016-01-11T14:11:26.559828 #10501]  INFO -- :   Rendered layouts/_footer.html.erb (4.4ms)
+I, [2016-01-11T14:11:26.560140 #10501]  INFO -- : Completed 200 OK in 348ms (Views: 303.7ms | ActiveRecord: 43.1ms)

@@ -1,0 +1,27 @@
+<%= form_for ([:admin, @product]),:html=>{:multipart=>true} do |f| %> 
+
+	<div class='field'>
+		<%= f.label :Name %>
+		<%= f.text_field :name %>
+	</div><br><br>
+
+    <div class="field">
+		<%= f.label :Price%>
+		<%= f.text_field :price %>
+	</div>  <br>
+	<div class="field">
+		<%= f.label :Category_id%>
+		<%= f.number_field :category_id%>
+	</div>  <br>
+	<%= f.label :avatar, "Photo" %>
+    <%= f.file_field :avatar  %><br>
+	<div class="action">
+	   <%= f.submit %> 
+	</div>
+<%end%><br>
+<% @category.each do |cat|%>
+	<%= cat.id%> = <%= cat.name%>|
+<%end%><br>
+	
+
+

@@ -1,0 +1,70 @@
+<div class="mainmenu-area">
+    <div class="container">
+        <div class="row">
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+
+               <li><%= link_to 'Home', shops_index_path%></li>
+                    <li><%= link_to 'Products', product_shops_path%></li>
+                     <% if user_signed_in? %>
+                    <li><%= link_to 'Cart', cart_shops_path%></li>
+                    <%end%>
+                    <li class="active"><%=link_to 'Category',  categories_path %></li>
+                    
+                        </ul>
+            </div>  
+        </div>
+    </div>
+</div>
+<div class="product-big-title-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="product-bit-title text-center">
+                    <h2>Choose Category</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <p class="lead">Categories:</p>
+                <div class="list-group">
+                    <ul>
+                    <% Category.all.each do |category| %>
+                        <li><%= link_to category.name, category_path(category) %></li>
+                    <% end %>
+                    </ul>
+                </div>
+        </div>
+        <div class="col-md-9">
+            <div class="row carousel-holder">
+                <div class="col-md-12">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <%=image_tag "product-1.jpg"%>
+                                </div>
+                                <div class="item">
+                                    <%= image_tag"product-2.jpg" %>
+                                </div>
+                                <div class="item">
+                              		 <%= image_tag"product-3.jpg" %>
+
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+   

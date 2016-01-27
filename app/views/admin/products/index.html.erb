@@ -1,0 +1,29 @@
+<table border= "1" style="width:50%">
+<thead>
+<tr>
+<th>Name</th>
+<th>Price</th>
+<th>Category id</th>
+<th>Image</th>
+<th> actions </th>
+</tr>
+</thead>
+<tbody>
+<% @products.each do |p| %>
+<tr>
+<td><%= p.name %></td>
+<td><%= p.price %></td>
+<td><%= p.category_id %></td>
+<td><%= image_tag p.avatar.url(:medium) %></td>
+<td><%= link_to 'Show', admin_product_path(p)%> |
+<%= link_to 'Edit', edit_admin_product_path(p) %>|
+<%= link_to 'Destroy', admin_product_path(p), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= will_paginate @products %> 
+<%=link_to 'New Product', new_admin_product_path %><br>
+<%= link_to 'Dashboard', admin_dashboard_index_path%>
+
+

@@ -1,0 +1,144 @@
+<div class="mainmenu-area">
+    <div class="container">
+        <div class="row">
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+
+               <li><%= link_to 'Home', shops_index_path%></li>
+                    <li><%= link_to 'Products', product_shops_path%></li>
+                     <% if user_signed_in? %>
+                    <li><%= link_to 'Cart', cart_shops_path%></li>
+                    <%end%>
+                    <li><%=link_to 'Category',  categories_path %></li>
+                    
+                        </ul>
+            </div>  
+        </div>
+    </div>
+</div>
+<div class="single-product-area">
+        <div class="zigzag-bottom"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        
+                        
+                        <div class="single-sidebar">
+                            <h2 class="sidebar-title">Your Order</h2>
+                            <div class="thubmnail-recent">
+                              <table cellspacing="0" class="shop_table cart">
+                                    <thead>
+                                        <tr>                                         
+                                            <th class="product-thumbnail">Image</th>
+                                            <th class="product-name">Product</th>
+                                            <th class="product-price">Price</th>                           
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <% current_user.try(:carts).each do |cart|%>
+                                        <tr class="cart_item">
+                                          
+                                            
+                                            <td class="product-thumbnail">
+                                                <a href="single-product.html">                   
+                                      <%=image_tag(Product.find(cart.product_id).avatar_file_name) %>                                              
+                                            </a>
+                                            </td>
+
+                                            <td class="product-name">
+                                                <a href="single-product.html"><%= Product.find(cart.product_id).name %></a> 
+                                            </td>
+
+                                            <td class="product-price">
+                                                <span class="amount">$<%= Product.find(cart.product_id).price %></span> 
+                                            </td>
+                                           
+                                        </tr>
+                                        <% end %>
+                                        <%#=link_to 'Place Order',order_all_checkout_index_path %>
+                                        
+                                    </tbody>
+                                </table>  
+                                 <tr class="cart-subtotal">
+                                           <h3> <u><th>Cart total</th></u>:
+                                            <span class="amount">        
+                                            <b>$<%=render 'layouts/total'%></b></span></h3>
+                                            </span></td>
+                                        </tr>
+                            </div>                         
+                            </div>
+                        </div>    
+                </div>
+                
+                <div class="col-md-8">
+
+                    <div class="product-content-right">
+                        <div class="woocommerce">
+                            
+                            <p>Please provide us your address where you want the product to be delivered</p>
+                                <%= form_for Address.new ,url:{:controller=>'checkout', :action=>'place_order'} do |f| %>
+                                        <p class="form-row form-row-first">
+                                        <div class="field">
+                                            <%= f.label :name%>
+                                            <%= f.text_field :first_name %>
+                                        </div>
+                                        </p>
+
+                                        <div class="clear"></div>
+
+
+                                        <p class="form-row">
+                                        <div class="field">
+                                            <%= f.label :address %>
+                                            <%= f.text_field :address %>
+                                        </div>
+                                        </p>
+
+                                        <p class="form-row">
+                                        <div class="field">
+                                            <%= f.label :City %>
+                                            <%= f.text_field :city %>
+                                        </div>
+                                        </p>
+
+                                        <p class="form-row">
+                                        <div class="field">
+                                            <%= f.label :Postcode %>
+                                            <%= f.text_field :postcode %>
+                                        </div>
+                                        </p>
+                                        <p class="form-row">
+                                        <div class="field">
+                                            <%= f.label :Country %>
+                                            <%= f.text_field :country %>
+                                        </div>
+                                        </p>
+                                        <p class="form-row">
+                                        <div class="field">
+                                            <%= f.label :Address_type %>
+                                            <%= f.text_field :address_type %>
+                                        </div>
+                                        </p>
+                                       <%@a= render 'layouts/total'%>
+                                        <%= f.hidden_field :user_id , value: current_user.id %>
+                                        <%= f.hidden_field :total_price , value: @a %>
+                                        <%= f.hidden_field :product_id,value: current_user.try(:carts).map(&:product_id).to_a %>
+                                        
+                                        <p>
+                                        <div class="action">
+                                        <%= f.submit 'Proceed To Place Order'%>
+                                        </div>
+                                        </p>
+                                <%end%>
+                                </form>
+                                   
+                                    </table>
+                                </div>                    
+                            </div> 
+                        </div>                       
+                    </div>
+            </div>
+</div>
+
+
+  

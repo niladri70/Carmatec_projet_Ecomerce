@@ -1,0 +1,19 @@
+<table border= "1" style="width:50%">
+<thead>
+<tr>
+<th>Category Name</th>
+<th> actions </th>
+</tr>
+</thead>
+<tbody>
+<%@categories.each do |p| %>
+	<tr>
+	<td><%= p.name%></td>
+	<td><%= link_to 'Edit', edit_admin_category_path(p) %>|
+		<%= link_to 'Destroy', admin_category_path(p), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	</tr>
+<% end %>
+</tbody>
+</table>
+<%=link_to 'New categories', new_admin_category_path %><br>
+<%= link_to 'Dashboard',admin_dashboard_index_path %>

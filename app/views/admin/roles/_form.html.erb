@@ -1,0 +1,11 @@
+<%= form_for ([:admin, @role]) do |f| %> 
+
+	<div class='field'>
+		<%= f.label :Name %>
+		<%= f.text_field :name %>
+	</div><br><br>	
+	<div class="action">
+	   <%= f.submit %> 
+	</div>
+
+<%end%>

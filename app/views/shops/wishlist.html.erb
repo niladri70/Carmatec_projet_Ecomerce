@@ -1,0 +1,52 @@
+<div class="mainmenu-area">
+    <div class="container">
+        <div class="row">
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+
+               <li><%= link_to 'Home', shops_index_path%></li>
+                    <li ><%= link_to 'Products', product_shops_path%></li>
+                     <% if user_signed_in? %>
+                    <li><%= link_to 'Cart', cart_shops_path%></li>
+                    <%end%>
+                    <li><%=link_to 'Category',  categories_path %></li>
+                    
+                        </ul>
+            </div>  
+        </div>
+    </div>
+</div>
+<div class="product-big-title-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="product-bit-title text-center">
+                        <h2>Wishlists</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+<table border= "1" style="width:50%">
+<thead>
+<tr>
+<th>Product Name</th>
+<th> Price </th>
+<th>Picture</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody>
+<%@wishes.each do |wish| %>
+	<tr>
+	<td><%= Product.find_by_id(wish.product_id).name%></td>
+	<td><%= Product.find_by_id(wish.product_id).price%></td>
+	<td><%= image_tag(Product.find_by_id(wish.product_id).avatar_file_name,height: '100', width: '100')%></td>
+	<td><%= link_to 'Delete',shop_path(wish),method: :delete, data: { confirm: 'Are you sure?' } %>|
+	    <%= link_to "Add to Cart",ajax_add_shops_path(:product_id => Product.find_by_id(wish.product_id).id),data: { confirm: 'Are you sure? Product will automatically added to cart' }, :remote => true  %>	
+	</td>
+	</tr>
+<% end %>
+</tbody>
+</table>

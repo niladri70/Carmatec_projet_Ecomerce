@@ -1,0 +1,53 @@
+<div class="mainmenu-area">
+    <div class="container">
+        <div class="row">
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+
+               <li><%= link_to 'Home', shops_index_path%></li>
+                    <li class="active"><%= link_to 'Products', product_shops_path%></li>
+                     <% if user_signed_in? %>
+                    <li><%= link_to 'Cart', cart_shops_path%></li>
+                    <%end%>
+                    <li><%=link_to 'Category',  categories_path %></li>
+                    
+                        </ul>
+            </div>  
+        </div>
+    </div>
+</div>
+<div class="single-product-area">
+    <div class="zigzag-bottom"></div>
+        <div class="container">
+            <% @products.each do |product| %>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="single-shop-product">
+                        <div class="product-upper",style="width:250px;height:250px";>
+                            <%=link_to image_tag(product.avatar_file_name),single_product_shops_path(product_id: product.id)%>
+                        </div>
+                        <h2> <%= link_to(product.name,single_product_shops_path(product_id: product.id))%>   </h2>
+                        <div class="product-carousel-price">
+                            <ins>$<%= product.price %></ins> 
+                        </div>  
+                        <%if user_signed_in?%>
+                        <div class="product-option-shop">
+                            <%= link_to "Add to Cart",ajax_add_shops_path(:product_id => product.id),data: { confirm: 'Are you sure? Product will automatically added to cart' },class: "add_to_cart_button", :remote => true  %>
+                             
+                        </div>  <br>
+                        <% if current_user.wishlists.pluck(:product_id).include?product.id%>
+                            <h2> Already added to wishlist</h2>
+                            <%else%>
+                            <%= link_to "Add to Wishlist",ajax_wish_shops_path(:product_id => product.id),class: "add_to_cart_button", :remote => true  %>
+                            <%end%>
+                            <%else%>
+                            <%= link_to "Add to Cart",new_user_session_path  %>
+                            <%end%>
+                                          
+                    </div>
+                </div> 
+          <%end%>
+    </div>
+</div>
+<%= will_paginate @products %> 
+
+            

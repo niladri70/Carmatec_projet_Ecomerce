@@ -1,0 +1,12 @@
+Name : <%= @product.name %><br>
+Price : <%= @product.price %><br>
+Category id: <%=@product.category_id %>
+<%= image_tag @product.avatar.url(:medium) %><br>
+The Reviews are:<br>
+<% @a.each do |f|%>
+	<b><%= User.find_by_id(f.second).first_name %><b> <br>
+	<%= f.first%>
+	<br><br>
+<%end%>
+
+<%= link_to 'Back',admin_products_path%>

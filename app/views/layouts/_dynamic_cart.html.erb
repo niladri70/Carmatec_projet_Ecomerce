@@ -1,0 +1,8 @@
+<a href="<%= cart_shops_path %>">Cart - <span class="cart-amunt">$
+<% if current_user.try(:carts).present? %>
+	<%= current_user.try(:carts).pluck(:product_id).map{|u| Product.find(u).price}.sum %>
+<% else %> 0
+<% end %>
+
+</span> <i class="fa fa-shopping-cart"></i> <span class="product-count"><%= current_user.try(:carts).try(:count)%></span></a>
+               

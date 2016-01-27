@@ -1,0 +1,11 @@
+<a href="<%=wishlist_shops_path%>"> WISHLIST <span class="cart-amunt">
+<% if current_user.try(:wishlists).present? %>
+	<%= current_user.try(:wishlists).try(:count) %>
+	
+<% else %> 0
+<% end %>
+
+</span></a>
+               
+
+

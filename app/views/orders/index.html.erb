@@ -1,0 +1,86 @@
+
+<div class="mainmenu-area">
+    <div class="container">
+        <div class="row">
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+
+               <li><%= link_to 'Home', shops_index_path%></li>
+                    <li><%= link_to 'Products', product_shops_path%></li>
+                     <% if user_signed_in? %>
+                    <li><%= link_to 'Cart', cart_shops_path%></li>
+                    <%end%>
+                    <li><%=link_to 'Category',  categories_path %></li>
+                    
+                        </ul>
+            </div>  
+        </div>
+    </div>
+</div>
+<style type="text/css">
+#demo-side-bar{left:90%!important;display:block!important;}
+#branding .floatright{margin-right:130px!important;}
+</style>
+<!--Dynamically creates ads markup-->
+<?php include("http://www.egrappler.com/ads-header.php"); ?>
+    <div class="container_12">
+        <div class="grid_12 header-repeat">
+            <div id="branding">
+                <div class="floatright">
+                    <div class="floatleft marginleft10">
+                        <br /><span class="small grey">Last Login: <%=current_user.last_sign_in_at%></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="clear"><h1> Hi <b><%= current_user.first_name%></b></h1></div>
+        <div class="grid_2">
+            <div class="box sidemenu">
+                <div class="block" id="section-menu">
+                    <ul class="section menu">
+                        
+                                <% if @orders.blank? %>
+                                    <h1>No Orders found </h1>
+                                <%else%>
+                                    <table border= "1" style="width:50%">
+                                    <thead>
+                                    <tr>
+                                    <th>Product Name</th>
+                                    <th>Price</th>
+                                    <th>Image</th>
+                                    <th>Order Date</th>
+                                    <th>Status</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <% @orders.each do |order| %>
+                                    <tr>
+                                    <%Product.where(id: order.product_id.split(/[^\d]/).reject(&:empty?)).each do |p|%>
+
+                                    <td><%= p.name %></td>
+                                    <td><%= p.price %></td>
+                                    <td><%=image_tag(p.avatar_file_name,size:'100')  %></td>
+                                    <td><%=order.created_at %></td>
+                                    <td><b><%= order.status %></b><br></td>
+                                    
+                                          </tr>
+                                        <% end %> <%end%> 
+                                      </tbody>
+                                    
+                                    </table>
+
+                                    </b><br>
+                                
+                                        <br><br><br><br></i></font>
+                                    
+                                <%end%>
+						
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
